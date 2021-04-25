@@ -152,7 +152,7 @@ def main( ):
 
     if "1" == sim_type:                                                         # 1: Simple Mass Simulation
         controller_object = PID_Controller( mySim.mjModel, mySim.mjData,
-                                            Kp = 20, Kd = 1, Ki = 0, ref_type = 0)
+                                            Kp = 0, Kd = 0, Ki = 0, ref_type = 0)
 
     mySim.attach_controller( controller_object )
     mySim.run( )
